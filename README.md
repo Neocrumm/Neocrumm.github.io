@@ -1,2 +1,1 @@
-# the BEST stuff ever
-# it is super cool
+# is super cool
