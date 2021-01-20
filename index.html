@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!--General-->
+    <a href="sub-wiki.html">sub wiki</a>
+      <meta name="description"
+    content="The BEST stuff ever has the most interactive features ever">
+    <meta name="keywords" content="cool, awsome, The BEST stuff ever, the best site ever">
+    <meta name="google" content="notranslate">
+    <meta charset="windows-1256">
+<link rel="shortcut icon" href="giphy.gif">
+    <title id="demo4">The BEST stuff ever - home</title>
+    
+     <noscript>
+            <p style="color: red">Your browser has Javascript disabled. Please go to your browser preferences and enable Javascript in order to use this.</p>
+        </noscript> 
+</head>
+  <body>
+    <h1>The BEST stuff ever</h1>
+      <br>
+      <div class="list">
+      <li id="for_print"></li>
+      <li id="for_printing"></li>
+      <li id="for_printer"></li>
+      <li id="for_printiege"></li>
+      </div>
+      <br>
+      <div class="button holder">
+      <!-- First button -->
+          <div>
+      <button class="button1" id="scratchButton" onclick="window.open('https://scratch.mit.edu')">scratch</button>
+        </div>
+        <br>
+      <!-- Second button -->
+          <div>
+      <button class="button2" id="pbskidsButton" onclick="window.open('https://pbskids.org')">PBS kids</button>
+          </div>
+       <br>
+      <!-- Third button -->
+        <div>
+      <button class="button3" id="tynkerButton" onclick="window.open('https://tynker.com/hour-of-code/')" >tynker hour of code</button>
+    </div>
+    <br>
+    <!--fourth button-->
+    <div>
+      <button type="button" class="button3"
+onclick="document.getElementById('demo5').innerHTML = Date()">
+Click me to display Date and Time.</button>
+</div>
+<!--fifth button-->
+<br>
+<button class="button3" id="starfallButton" onclick="window.open('https://starfall.com/h/')">starfall</button>
+</div>
+          <p id="demo5"></p>
+          <p id="demo"></p>
+          <p id="demo2"></p>
+          <br>
+          
+          <table>
+    <header>Everyone is someone</header>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Non-binary?</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>12</td>
+    <td>Male</td>
+    <td>False</td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>14</td>
+    <td>Female</td>
+    <td>False</td>
+  </tr>
+    </table>
+<script type="text/javascript">// function definers for simpler commands  
+              function addtext(string) {
+                   alert(string); 
+}; function print(text) {
+    document.getElementById("for_print").innerHTML = text;
+    print2("Hello")
+};  function print2(word) {
+    document.getElementById("for_printing").innerHTML = word;
+    print3("bonjour")
+}; function print3(item) {
+    document.getElementById("for_printer").innerHTML = item;
+    print4("chao")
+};  function print4(letter) {
+     document.getElementById("for_printiege").innerHTML = letter;
+    
+};        // function callers
+              addtext("welcome, here you have lots of cool stuff"); print("hola") // arrays
+var websites = ["scratch", "PBS kids", "tynker","starfall"];
+var prev_array_disc = 'these are the websites they make you go to.' 
+              // add your faves to the array and make a button to go to it by 
+              // useing the onclick attruebute and adding window.open() inside
+              // the html.or use a plan link and enter the url in the href attruebute.
+document.getElementById("demo2").innerHTML = websites;
+    document.getElementById('demo').innerHTML = prev_array_disc;
+
+</script>
+          <style type="text/css"> 
+              body {
+                  color: lightblue;
+  margin: 0;
+  font-family: Arial,sans-serif;
+    background-color: rgb(0,0,0)
+              } h1,#demo4 {
+                  background-color: aliceblue;
+              }
+              header {
+                  color: white;
+              }
+.button1 {
+    background-color: yellow;
+    font-family: monospace;
+}
+.button2 {
+    font-family: serif;
+    background-color: aqua;
+}
+.button3 {
+    font-family: monospace;
+    color: darkblue;
+    background-color: aqua;
+              }  
+             /* when link hovered*/ 
+              a:hover {
+                  background-color: green;
+                  color: red;
+              } button:hover {
+                  background-color: blue;
+                  color: black;
+              }
+              
+button {
+    width: 250px;
+    height: 50px;
+}
+#demo, #demo2, #demo3, #demo5 {
+    font-family: monospace;
+    color: blue;
+}
+.list {
+    color: hsl(304, 100%, 50%)
+}
+ footer {
+               background-color: crimson;
+                  width: 675;
+                  color: aqua;
+                  font-family: monospace
+              } a {
+                  color: aqua;
+              }
+          </style>
+          <p id="demo3"></p>
+
+<script type="text/javascript">
+var person = {
+  firstName : "Parker",
+  lastName  : "Solomon",
+  age     : 7,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo3").innerHTML =
+person.firstName + " is " + person.age + " years old." + "  He has " + person.eyeColor + ' eyes.' ;    
+</script>
+<h3 style="color: cyan;">Scratch Games</h3>
+<div class="scratch-games-holder">
+<div>
+    <iframe src="https://scratch.mit.edu/projects/464236480/embed" allowtransparency="true" width="750" height="600" frameborder="0" scrolling="no" allowfullscreen></iframe>
+</div>
+<br>
+    <div>
+        <iframe src="https://scratch.mit.edu/projects/473921030/embed" allowtransparency="true" width="750" height="600" frameborder="0" 
+        scrolling="no" allowfullscreen></iframe>
+    </div>
+<br>
+<div><h3 style="color: cyan;">
+      <a href="https://scratch.mit.edu">Scratch</a>  
+    </h3>
+    <p style="color: cyan;">Click <b>create</b> 
+    to make a project.
+    </p>
+    </div>
+    
+</div>
+ <footer>
+  <p>Author: Parker Solomon<br>
+      <a href="https://tynker.com/home">ddf2@gmailm.com</a>
+      <br>
+      <a href="widgets.html">widgets</a>
+      <br>
+      <a href="soom-stuff.html">soom stuff</a>
+     </p>
+  
+</footer>
+  </body>
+      
+</html> 

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <a href="widgets.html">widgets</a><br><a href="index.html">homepage</a>
+        <link rel="stylesheet" href="soom-stuff.css">
+        <meta charset="windows-1256">
+    <title id="demo4">The BEST stuff ever - Soom Stuff</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="giphy.gif">
+    </head>
+    <body>
+        <div id="calculator">
+      <header>Bubble Sort</header>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 1:</label><input id="index1" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 2:</label><input id="index2" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 3:</label><input id="index3" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 4:</label><input id="index4" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id = "input">
+        <label>Input 5:</label><input id="index5" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 6:</label><input id="index6" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 7:</label><input id="index7" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id = "input">
+        <label>Input 8:</label><input id="index8" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 9:</label><input id="index9" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Input 10:</label><input id="index10" type="number" size="20" >
+      </div>
+      <!-- Create input field -->
+      <div id = "input">
+        <label>Sorted Array:</label><input id="output" type="text" type="number" size="20">
+      </div>
+      <!-- Create input field -->
+      <div id="input">
+        <label>Total Steps:</label><input id="steps" size="20">
+      </div>
+      <!-- Create button -->
+      <button onclick="bubbleSort()">Sort</button>
+    </div>
+    
+    <!-- Start Javascript -->
+    <script>
+      function bubbleSort() {
+        var arr = [];
+        for(var i = 1; i < 11; i++) {
+          if(document.getElementById("index" + String(i)).value == '') {
+            continue;
+          }
+          else {
+            arr.push(parseInt(document.getElementById("index" + String(i)).value)); 
+          }
+        }
+        var len = arr.length;
+        var counter = 0;
+        for(var i = len-1; i >=0; i--) {
+          for(var j = 1; j <= i; j++) {
+            if(arr[j-1]>arr[j]) {
+              var temp = arr[j-1];
+              arr[j-1] = arr[j];
+              arr[j] = temp;
+              counter++;
+            }
+          }
+        }
+        arr = arr.toString();
+        document.getElementById("output").value = arr;
+        document.getElementById("steps").value = counter;
+      }
+    </script>
+        
+     
+    </body>
+</html>
+
+
