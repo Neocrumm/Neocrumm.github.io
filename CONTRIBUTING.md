@@ -1,1 +1,1 @@
- ***no deleting stuff, no archiving stuff***, and ***don't do anything mean.***
+ ***no deleting stuff, no archiving stuff***, and ***don't write anything mean.***
