@@ -27,15 +27,10 @@ function checkCookie() {
   if (user != "") {
     alert("Welcome again " + user);
   } else {
-     user = prompt("Please enter your github username:","");
-    if (comfirm("are you sure?")) {
-     alert("ok") 
+     user = prompt("Please enter your scratch or github username(if no username type your name.):","");
       if (user != "" && user != null) {
        setCookie("username", user, 30);
      }
-    } else {
-     setCookie("username", "Anonymous", 30) 
-    }
      
   }
  
