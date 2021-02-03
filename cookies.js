@@ -21,7 +21,7 @@ function getCookie(cname) {
   }
   return "";
 }
-
+// cookie checker uses checkCookie()
 function checkCookie() {
   var user=getCookie("username");
   if (user != "") {
